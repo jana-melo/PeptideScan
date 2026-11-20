@@ -1,4 +1,4 @@
-PeptideScan
+# PeptideScan
 
 A Python package for peptide sequence analysis and biochemical characterization.
 
@@ -6,35 +6,35 @@ PeptideScan is an open-source Python package designed to analyze peptide sequenc
 
 The package is intended to support researchers working with peptides, food proteins, proteomics, and bioactive peptide research.
 
-Features
+## Features
 
 PeptideScan currently provides the following functionalities:
 
-FASTA input: read peptide sequences from FASTA files while preserving sequence identifiers and descriptions.
+**FASTA input**: read peptide sequences from FASTA files while preserving sequence identifiers and descriptions.
 
-Peptide properties: calculate peptide length and monoisotopic molecular mass.
+**Peptide properties**: calculate peptide length and monoisotopic molecular mass.
 
-Amino acid composition: determine the count and relative frequency of each of the 20 standard amino acids.
+**Amino acid composition**: determine the count and relative frequency of each of the 20 standard amino acids.
 
-Biochemical group analysis: calculate the composition and frequency of amino acid groups, including hydrophobic, polar uncharged, acidic, basic, and aromatic residues.
+**Biochemical group analysis**: calculate the composition and frequency of amino acid groups, including hydrophobic, polar uncharged, acidic, basic, and aromatic residues.
 
-Customizable criteria: identify peptides enriched in selected amino acid groups using user-defined frequency thresholds.
+**Customizable criteria**: identify peptides enriched in selected amino acid groups using user-defined frequency thresholds.
 
-Peptide filtering: select sequences according to length, molecular mass, amino acid occurrence, and biochemical group criteria.
+**Peptide filtering**: select sequences according to length, molecular mass, amino acid occurrence, and biochemical group criteria.
 
-Data export: save analysis results in CSV format or export selected peptide sequences to FASTA.
+**Data export**: save analysis results in CSV format or export selected peptide sequences to FASTA.
 
-Installation
+## Installation
 
 Clone the repository:
 
-git clone https://github.com/jana-melo/PeptideScan.git
+[git clone] (https://github.com/jana-melo/PeptideScan.git)
 
 Navigate to the project directory:
 
 cd PeptideScan
 
-Install the package:
+### Install the package:
 
 python -m pip install .
 
@@ -56,7 +56,7 @@ results = analyze_and_export(
 print(f"Analyzed peptides: {len(results['records'])}")
 print(f"Results saved to: {results['csv_path']}")
 
-Available functions
+## Available functions
 
 The main functions available in PeptideScan include:
 
@@ -100,7 +100,7 @@ Input format
 
 PeptideScan accepts FASTA files containing peptide sequences.
 
-Example:
+### Example:
 
 >P001 Peptide example 1
 AGKPKY
@@ -111,7 +111,7 @@ VILMGA
 
 The current implementation validates sequences against the 20 standard amino acid residue codes.
 
-Scientific considerations
+## Scientific considerations
 
 Molecular mass calculations refer to monoisotopic masses of linear, unmodified peptide sequences.
 
@@ -121,7 +121,7 @@ Frequency thresholds are user-defined screening criteria and should not be inter
 
 Amino acid composition and biochemical properties can help prioritize peptide candidates, but do not independently demonstrate biological activity.
 
-Testing
+## Testing
 
 PeptideScan uses pytest for automated testing.
 
@@ -129,12 +129,15 @@ Run the test suite from the project root directory:
 
 python -m pytest -v
 
-Project structure
+### Project structure
 
+```
 PeptideScan/
+│
 ├── pyproject.toml
 ├── README.md
 ├── LICENSE
+│
 ├── src/
 │   └── peptidescan/
 │       ├── __init__.py
@@ -146,10 +149,14 @@ PeptideScan/
 │       ├── export.py
 │       ├── analysis.py
 │       └── workflow.py
+│
 ├── tests/
+│
 └── examples/
+``` 
 
-Dependencies
+
+## Dependencies
 
 PeptideScan uses the following Python libraries:
 
@@ -159,17 +166,17 @@ Pyteomics — molecular mass calculations.
 
 pytest — automated testing during development.
 
-Contributing
+## Contributing
 
 Contributions, suggestions, and bug reports are welcome.
 
 If you would like to contribute, please open an issue or submit a pull request through GitHub.
 
-License
+## License
 
 This project is distributed under the MIT License. See the LICENSE file for details.
 
-Authors
+## Authors
 
 Janaina Melo and Renata Menezes
 
