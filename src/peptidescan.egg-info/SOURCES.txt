@@ -1,0 +1,10 @@
+pyproject.toml
+src/peptidescan/__init__.py
+src/peptidescan/fasta.py
+src/peptidescan/properties.py
+src/peptidescan.egg-info/PKG-INFO
+src/peptidescan.egg-info/SOURCES.txt
+src/peptidescan.egg-info/dependency_links.txt
+src/peptidescan.egg-info/requires.txt
+src/peptidescan.egg-info/top_level.txt
+tests/test_fasta.py

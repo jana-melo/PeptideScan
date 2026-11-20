@@ -1,0 +1,7 @@
+biopython
+pyteomics
+pandas
+
+[dev]
+pytest
+build
